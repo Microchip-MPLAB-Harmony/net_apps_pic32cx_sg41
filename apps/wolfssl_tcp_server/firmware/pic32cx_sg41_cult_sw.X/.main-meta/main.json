@@ -1,0 +1,76 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_sam_e5x_wolfssl_tcp_server_pic32cx_sg41_cult_sw",
+		"version": "3.7.0",
+		"displayName": "TCP/IP WolfSSL TCP Server Example for SAM D5x/E5x Family",
+		"projectName": "pic32cx_sg41_cult_sw",
+		"shortDescription": "This configuration demonstrates creating a simple Internet Web server, that operates with clear text (TCP Port 80), and with encrypted text (TCP Port 443). If IPv6 is enabled than the demonstration also serves both types of connections on IPv6. The Web server only serves one page with the text 'Nothing Here' to all Web clients. ",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-SG41_DFP",
+			"semverRange": "^3.2.56"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.6.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CX1025SG41128",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "TCP/IP", "WOLFSSL_TCP_SERVER"
+			],
+			[
+				"Middleware", "TCP/IP", "WOLFSSL_TCP_SERVER"
+			]
+		],
+		"peripherals": [
+			"MAC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"TCP/IP",
+			"PIC32CX1025SG41128",
+			"SAM D5x/E5x Family",
+			"Ethernet MAC",
+			"GMAC"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

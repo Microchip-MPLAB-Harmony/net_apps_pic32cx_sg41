@@ -78,15 +78,15 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
-/* Forward declaration of PHY initialization data */
-const DRV_ETHPHY_INIT tcpipPhyInitData_KSZ8091;
-
 /* Forward declaration of GMAC initialization data */
 const TCPIP_MODULE_MAC_PIC32C_CONFIG tcpipGMACInitData;
 
 
 /* Forward declaration of MIIM 0 initialization data */
 static const DRV_MIIM_INIT drvMiimInitData_0;
+
+/* Forward declaration of PHY initialization data */
+const DRV_ETHPHY_INIT tcpipPhyInitData_LAN8740;
 
 
 
@@ -103,29 +103,6 @@ SYSTEM_OBJECTS sysObj;
 // Section: Library/Stack Initialization Data
 // *****************************************************************************
 // *****************************************************************************
-/*** KSZ8091 PHY Driver Time-Out Initialization Data ***/
-DRV_ETHPHY_TMO drvksz8091Tmo = 
-{
-    .resetTmo = DRV_ETHPHY_KSZ8091_RESET_CLR_TMO,
-    .aNegDoneTmo = DRV_ETHPHY_KSZ8091_NEG_DONE_TMO,
-    .aNegInitTmo = DRV_ETHPHY_KSZ8091_NEG_INIT_TMO,    
-};
-
-/*** ETH PHY Initialization Data ***/
-const DRV_ETHPHY_INIT tcpipPhyInitData_KSZ8091 =
-{    
-    .ethphyId               = DRV_KSZ8091_PHY_PERIPHERAL_ID,
-    .phyAddress             = DRV_KSZ8091_PHY_ADDRESS,
-    .phyFlags               = DRV_KSZ8091_PHY_CONFIG_FLAGS,
-    .pPhyObject             = &DRV_ETHPHY_OBJECT_KSZ8091,
-    .resetFunction          = 0,
-    .ethphyTmo              = &drvksz8091Tmo,
-    .pMiimObject            = &DRV_MIIM_OBJECT_BASE_Default,
-    .pMiimInit              = &drvMiimInitData_0,
-    .miimIndex              = 0,
-};
-
-
 
 // <editor-fold defaultstate="collapsed" desc="TCP/IP Stack Initialization Data">
 // *****************************************************************************
@@ -339,10 +316,10 @@ const TCPIP_MODULE_MAC_PIC32C_CONFIG tcpipGMACInitData =
        .txPrioNumToQueIndx = txPrioNumToQueIndxGmac,
        .rxPrioNumToQueIndx = rxPrioNumToQueIndxGmac,
        .ethFlags               = TCPIP_GMAC_ETH_OPEN_FLAGS,    
-       .linkInitDelay          = DRV_KSZ8091_PHY_LINK_INIT_DELAY,
+       .linkInitDelay          = DRV_LAN8740_PHY_LINK_INIT_DELAY,
        .ethModuleId            = TCPIP_GMAC_MODULE_ID,
        .pPhyBase               = &DRV_ETHPHY_OBJECT_BASE_Default,
-       .pPhyInit               = &tcpipPhyInitData_KSZ8091,
+       .pPhyInit               = &tcpipPhyInitData_LAN8740,
        .checksumOffloadRx      = DRV_GMAC_RX_CHKSM_OFFLOAD,
        .checksumOffloadTx      = DRV_GMAC_TX_CHKSM_OFFLOAD,
        .macTxPrioNum           = TCPIP_GMAC_TX_PRIO_COUNT,
@@ -354,8 +331,31 @@ const TCPIP_MODULE_MAC_PIC32C_CONFIG tcpipGMACInitData =
 /*** MIIM Driver Instance 0 Configuration ***/
 static const DRV_MIIM_INIT drvMiimInitData_0 =
 {
-   .ethphyId = DRV_MIIM_ETH_MODULE_ID_0,
+   .miimId = DRV_MIIM_ETH_MODULE_ID_0,
 };
+
+/*** LAN8740 PHY Driver Time-Out Initialization Data ***/
+DRV_ETHPHY_TMO drvlan8740Tmo = 
+{
+    .resetTmo = DRV_ETHPHY_LAN8740_RESET_CLR_TMO,
+    .aNegDoneTmo = DRV_ETHPHY_LAN8740_NEG_DONE_TMO,
+    .aNegInitTmo = DRV_ETHPHY_LAN8740_NEG_INIT_TMO,    
+};
+
+/*** ETH PHY Initialization Data ***/
+const DRV_ETHPHY_INIT tcpipPhyInitData_LAN8740 =
+{    
+    .ethphyId               = DRV_LAN8740_PHY_PERIPHERAL_ID,
+    .phyAddress             = DRV_LAN8740_PHY_ADDRESS,
+    .phyFlags               = DRV_LAN8740_PHY_CONFIG_FLAGS,
+    .pPhyObject             = &DRV_ETHPHY_OBJECT_LAN8740,
+    .resetFunction          = 0,
+    .ethphyTmo              = &drvlan8740Tmo,
+    .pMiimObject            = &DRV_MIIM_OBJECT_BASE_Default,
+    .pMiimInit              = &drvMiimInitData_0,
+    .miimIndex              = 0,
+};
+
 
 
 
@@ -391,12 +391,12 @@ extern const SYS_CONSOLE_DEV_DESC sysConsoleUARTDevDesc;
 
 const SYS_CONSOLE_UART_PLIB_INTERFACE sysConsole0UARTPlibAPI =
 {
-    .read = (SYS_CONSOLE_UART_PLIB_READ)SERCOM2_USART_Read,
-	.readCountGet = (SYS_CONSOLE_UART_PLIB_READ_COUNT_GET)SERCOM2_USART_ReadCountGet,
-	.readFreeBufferCountGet = (SYS_CONSOLE_UART_PLIB_READ_FREE_BUFFFER_COUNT_GET)SERCOM2_USART_ReadFreeBufferCountGet,
-    .write = (SYS_CONSOLE_UART_PLIB_WRITE)SERCOM2_USART_Write,
-	.writeCountGet = (SYS_CONSOLE_UART_PLIB_WRITE_COUNT_GET)SERCOM2_USART_WriteCountGet,
-	.writeFreeBufferCountGet = (SYS_CONSOLE_UART_PLIB_WRITE_FREE_BUFFER_COUNT_GET)SERCOM2_USART_WriteFreeBufferCountGet,
+    .read = (SYS_CONSOLE_UART_PLIB_READ)SERCOM4_USART_Read,
+	.readCountGet = (SYS_CONSOLE_UART_PLIB_READ_COUNT_GET)SERCOM4_USART_ReadCountGet,
+	.readFreeBufferCountGet = (SYS_CONSOLE_UART_PLIB_READ_FREE_BUFFFER_COUNT_GET)SERCOM4_USART_ReadFreeBufferCountGet,
+    .write = (SYS_CONSOLE_UART_PLIB_WRITE)SERCOM4_USART_Write,
+	.writeCountGet = (SYS_CONSOLE_UART_PLIB_WRITE_COUNT_GET)SERCOM4_USART_WriteCountGet,
+	.writeFreeBufferCountGet = (SYS_CONSOLE_UART_PLIB_WRITE_FREE_BUFFER_COUNT_GET)SERCOM4_USART_WriteFreeBufferCountGet,
 };
 
 const SYS_CONSOLE_UART_INIT_DATA sysConsole0UARTInitData =
@@ -470,9 +470,9 @@ void SYS_Initialize ( void* data )
 
     TC0_TimerInitialize();
 
-    SERCOM2_USART_Initialize();
-
     EVSYS_Initialize();
+
+    SERCOM4_USART_Initialize();
 
 
 

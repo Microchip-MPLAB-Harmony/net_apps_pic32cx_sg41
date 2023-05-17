@@ -15,8 +15,8 @@
             <logicalFolder name="ethphy" displayName="ethphy" projectFiles="true">
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
-                  <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/dynamic/drv_extphy_ksz8091.h</itemPath>
                   <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/dynamic/drv_extphy_regs.h</itemPath>
+                  <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/dynamic/drv_extphy_lan8740.h</itemPath>
                 </logicalFolder>
                 <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/drv_ethphy_local.h</itemPath>
               </logicalFolder>
@@ -36,7 +36,7 @@
             <logicalFolder name="miim" displayName="miim" projectFiles="true">
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
-                  <itemPath>../src/config/pic32cx_sg41_cult/driver/miim/src/dynamic/drv_miim_mapping.h</itemPath>
+                  <itemPath>../src/config/pic32cx_sg41_cult/driver/miim/src/dynamic/drv_miim_device.h</itemPath>
                 </logicalFolder>
                 <itemPath>../src/config/pic32cx_sg41_cult/driver/miim/src/drv_miim_local.h</itemPath>
               </logicalFolder>
@@ -208,8 +208,8 @@
             </logicalFolder>
             <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
-                <itemPath>../src/config/pic32cx_sg41_cult/peripheral/sercom/usart/plib_sercom2_usart.h</itemPath>
                 <itemPath>../src/config/pic32cx_sg41_cult/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
+                <itemPath>../src/config/pic32cx_sg41_cult/peripheral/sercom/usart/plib_sercom4_usart.h</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="tc" displayName="tc" projectFiles="true">
@@ -266,6 +266,24 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
+        <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
+          <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
+            <logicalFolder name="Core" displayName="Core" projectFiles="true">
+              <logicalFolder name="Include" displayName="Include" projectFiles="true">
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="PIC32CX1025SG41128_DFP"
                        displayName="PIC32CX1025SG41128_DFP"
                        projectFiles="true">
@@ -375,26 +393,10 @@
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/PIC32CX1025SG41128_DFP/pio/PIC32CX1025SG41128.h</itemPath>
+            <itemPath>../src/packs/PIC32CX1025SG41128_DFP/pio/pic32cx1025sg41128.h</itemPath>
           </logicalFolder>
           <itemPath>../src/packs/PIC32CX1025SG41128_DFP/PIC32CX1025SG41128.h</itemPath>
-        </logicalFolder>
-        <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
-          <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
-            <logicalFolder name="Core" displayName="Core" projectFiles="true">
-              <logicalFolder name="Include" displayName="Include" projectFiles="true">
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-          </logicalFolder>
+          <itemPath>../src/packs/PIC32CX1025SG41128_DFP/pic32cx1025sg41128.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="wolfcrypt" displayName="wolfcrypt" projectFiles="true">
@@ -569,15 +571,15 @@
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
                   <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/dynamic/drv_ethphy.c</itemPath>
-                  <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/dynamic/drv_extphy_ksz8091.c</itemPath>
+                  <itemPath>../src/config/pic32cx_sg41_cult/driver/ethphy/src/dynamic/drv_extphy_lan8740.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="gmac" displayName="gmac" projectFiles="true">
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
-                  <itemPath>../src/config/pic32cx_sg41_cult/driver/gmac/src/dynamic/drv_gmac_lib_samE5x.c</itemPath>
                   <itemPath>../src/config/pic32cx_sg41_cult/driver/gmac/src/dynamic/drv_gmac.c</itemPath>
+                  <itemPath>../src/config/pic32cx_sg41_cult/driver/gmac/src/dynamic/drv_gmac_lib_pic32cx.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -585,6 +587,7 @@
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
                   <itemPath>../src/config/pic32cx_sg41_cult/driver/miim/src/dynamic/drv_miim.c</itemPath>
+                  <itemPath>../src/config/pic32cx_sg41_cult/driver/miim/src/dynamic/drv_miim_gmac.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -635,7 +638,7 @@
             </logicalFolder>
             <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
-                <itemPath>../src/config/pic32cx_sg41_cult/peripheral/sercom/usart/plib_sercom2_usart.c</itemPath>
+                <itemPath>../src/config/pic32cx_sg41_cult/peripheral/sercom/usart/plib_sercom4_usart.c</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="tc" displayName="tc" projectFiles="true">
@@ -792,14 +795,14 @@
         <targetDevice>PIC32CX1025SG41128</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>EdbgTool</platformTool>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CX-SG41_DFP" vendor="Microchip" version="3.7.122"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="PIC32CX-SG41_DFP" vendor="Microchip" version="1.1.122"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -862,7 +865,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32cx_sg41_cult;../src/config/pic32cx_sg41_cult/library;../src/config/pic32cx_sg41_cult/library/tcpip/src;../src/config/pic32cx_sg41_cult/library/tcpip/src/common;../src/packs/PIC32CX1025SG41128_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
+                  value="../src;../src/config/pic32cx_sg41_cult;../src/config/pic32cx_sg41_cult/library;../src/config/pic32cx_sg41_cult/library/tcpip/src;../src/config/pic32cx_sg41_cult/library/tcpip/src/common;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CX1025SG41128_DFP;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -930,7 +933,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="44960"/>
+        <property key="heap-size" value="64960"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -963,7 +966,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32cx_sg41_cult;../src/packs/PIC32CX1025SG41128_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+                  value="../src;../src/config/pic32cx_sg41_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CX1025SG41128_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1002,6 +1005,8 @@
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="firmware.path"
                   value="Press to browse for a specific firmware version"/>
@@ -1010,6 +1015,7 @@
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -1023,7 +1029,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
-        <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
@@ -1035,6 +1040,7 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="0"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
@@ -1043,6 +1049,7 @@
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
+        <property key="x.erase.clearprot" value="true"/>
       </EdbgTool>
       <PICkit3PlatformTool>
         <property key="ADC 1" value="true"/>
@@ -1532,11 +1539,21 @@
       </Simulator>
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
         <property key="arm.use_vtor" value="false"/>
         <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
+        <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="firmware.path"
                   value="Press to browse for a specific firmware version"/>
@@ -1545,6 +1562,7 @@
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -1560,7 +1578,10 @@
         <property key="memories.programmemory.ranges" value="0-fffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
                   value="${memories.dataflash.default}"/>
@@ -1569,7 +1590,11 @@
         <property key="programoptions.preserveprogram.ranges" value="0-47001fff"/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="0"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
@@ -1578,7 +1603,59 @@
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
+        <property key="x.erase.clearprot" value="true"/>
       </Tool>
+      <pkob4hybrid>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="freeze.timers" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value="0-47001fff"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+        <property key="x.erase.clearprot" value="true"/>
+      </pkob4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>

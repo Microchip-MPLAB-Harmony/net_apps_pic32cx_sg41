@@ -370,13 +370,6 @@ void NVMCTRL_SmartEEPROMSectorReallocate(void)
     NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_CMD_SEERALOC | NVMCTRL_CTRLB_CMDEX_KEY;
 }
 
-void NVMCTRL_SmartEEPROMFlushPageBuffer(void)
-{
-    /* Clear global error flag */
-    nvm_error = 0U;
-
-    NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_CMD_SEEFLUSH | NVMCTRL_CTRLB_CMDEX_KEY;
-}
 
 
 

@@ -111,7 +111,7 @@ extern "C" {
 
 
 #define SYS_CONSOLE_DEVICE_MAX_INSTANCES   			1
-#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			2
+#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			3
 #define SYS_CONSOLE_USB_CDC_MAX_INSTANCES 	   		0
 #define SYS_CONSOLE_PRINT_BUFFER_SIZE        		200
 
@@ -258,18 +258,6 @@ extern "C" {
 #define TCPIP_NETWORK_DEFAULT_MAC_DRIVER_IDX0         DRV_GMAC_Object
 
 
-#define DRV_KSZ8091_PHY_CONFIG_FLAGS       ( 0 \
-                                                    | DRV_ETHPHY_CFG_RMII \
-                                                    )
-                                                    
-#define DRV_KSZ8091_PHY_LINK_INIT_DELAY            500
-#define DRV_KSZ8091_PHY_ADDRESS                    0
-#define DRV_KSZ8091_PHY_PERIPHERAL_ID              GMAC_BASE_ADDRESS
-#define DRV_ETHPHY_KSZ8091_NEG_INIT_TMO            1
-#define DRV_ETHPHY_KSZ8091_NEG_DONE_TMO            2000
-#define DRV_ETHPHY_KSZ8091_RESET_CLR_TMO           500
-
-
 
 /*** IPv4 Configuration ***/
 #define TCPIP_IPV4_ARP_SLOTS                        10
@@ -317,6 +305,7 @@ extern "C" {
 
 #define TCPIP_STACK_TICK_RATE		        		5
 #define TCPIP_STACK_SECURE_PORT_ENTRIES             10
+#define TCPIP_STACK_LINK_RATE		        		333
 
 #define TCPIP_STACK_ALIAS_INTERFACE_SUPPORT   false
 
@@ -344,6 +333,7 @@ extern "C" {
 
 /*** GMAC Configuration ***/
 #define DRV_GMAC
+#define DRV_PIC32CX
 #define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY    1
 #define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY    1
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY            64
@@ -369,10 +359,8 @@ extern "C" {
 #define TCPIP_GMAC_SCREEN2_COUNT_QUE        0  
 
 #define TCPIP_GMAC_ETH_OPEN_FLAGS                   \
-                                                        TCPIP_ETH_OPEN_AUTO |\
                                                         TCPIP_ETH_OPEN_FDUPLEX |\
                                                         TCPIP_ETH_OPEN_HDUPLEX |\
-                                                        TCPIP_ETH_OPEN_100 |\
                                                         TCPIP_ETH_OPEN_10 |\
                                                         TCPIP_ETH_OPEN_MDIX_AUTO |\
                                                         TCPIP_ETH_OPEN_RMII |\
@@ -402,6 +390,18 @@ extern "C" {
 #define TCPIP_UDP_USE_RX_CHECKSUM             			true
 #define TCPIP_UDP_COMMANDS   false
 #define TCPIP_UDP_EXTERN_PACKET_PROCESS   false
+
+
+#define DRV_LAN8740_PHY_CONFIG_FLAGS       ( 0 \
+                                                    | DRV_ETHPHY_CFG_RMII \
+                                                    )
+                                                    
+#define DRV_LAN8740_PHY_LINK_INIT_DELAY            500
+#define DRV_LAN8740_PHY_ADDRESS                    0
+#define DRV_LAN8740_PHY_PERIPHERAL_ID              GMAC_BASE_ADDRESS
+#define DRV_ETHPHY_LAN8740_NEG_INIT_TMO            1
+#define DRV_ETHPHY_LAN8740_NEG_DONE_TMO            2000
+#define DRV_ETHPHY_LAN8740_RESET_CLR_TMO           500
 
 
 

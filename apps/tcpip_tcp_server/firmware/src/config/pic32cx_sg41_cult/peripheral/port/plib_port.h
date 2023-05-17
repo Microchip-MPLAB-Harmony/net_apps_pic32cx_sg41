@@ -65,6 +65,15 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*** Macros for GPIO_PC18 pin ***/
+#define GPIO_PC18_Set()               (PORT_REGS->GROUP[2].PORT_OUTSET = ((uint32_t)1U << 18U))
+#define GPIO_PC18_Clear()             (PORT_REGS->GROUP[2].PORT_OUTCLR = ((uint32_t)1U << 18U))
+#define GPIO_PC18_Toggle()            (PORT_REGS->GROUP[2].PORT_OUTTGL = ((uint32_t)1U << 18U))
+#define GPIO_PC18_OutputEnable()      (PORT_REGS->GROUP[2].PORT_DIRSET = ((uint32_t)1U << 18U))
+#define GPIO_PC18_InputEnable()       (PORT_REGS->GROUP[2].PORT_DIRCLR = ((uint32_t)1U << 18U))
+#define GPIO_PC18_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 18U)) & 0x01U)
+#define GPIO_PC18_PIN                  PORT_PIN_PC18
+
 // *****************************************************************************
 /* PORT Group
 

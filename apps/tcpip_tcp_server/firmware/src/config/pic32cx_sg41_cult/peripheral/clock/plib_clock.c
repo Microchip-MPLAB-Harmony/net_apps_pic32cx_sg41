@@ -115,6 +115,16 @@ static void GCLK0_Initialize(void)
     }
 }
 
+static void GCLK1_Initialize(void)
+{
+    GCLK_REGS->GCLK_GENCTRL[1] = GCLK_GENCTRL_DIV(2U) | GCLK_GENCTRL_SRC(7U) | GCLK_GENCTRL_GENEN_Msk;
+
+    while((GCLK_REGS->GCLK_SYNCBUSY & GCLK_SYNCBUSY_GENCTRL_GCLK1) == GCLK_SYNCBUSY_GENCTRL_GCLK1)
+    {
+        /* wait for the Generator 1 synchronization */
+    }
+}
+
 static void GCLK2_Initialize(void)
 {
     GCLK_REGS->GCLK_GENCTRL[2] = GCLK_GENCTRL_DIV(48U) | GCLK_GENCTRL_SRC(6U) | GCLK_GENCTRL_GENEN_Msk;
@@ -139,21 +149,22 @@ void CLOCK_Initialize (void)
     FDPLL0_Initialize();
     DFLL_Initialize();
     GCLK0_Initialize();
+    GCLK1_Initialize();
     GCLK2_Initialize();
 
     /* MISRAC 2012 deviation block end */
 
     /* Selection of the Generator and write Lock for TC0 TC1 */
-    GCLK_REGS->GCLK_PCHCTRL[9] = GCLK_PCHCTRL_GEN(0x0U)  | GCLK_PCHCTRL_CHEN_Msk;
+    GCLK_REGS->GCLK_PCHCTRL[9] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
 
     while ((GCLK_REGS->GCLK_PCHCTRL[9] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
     {
         /* Wait for synchronization */
     }
-    /* Selection of the Generator and write Lock for SERCOM2_CORE */
-    GCLK_REGS->GCLK_PCHCTRL[23] = GCLK_PCHCTRL_GEN(0x0U)  | GCLK_PCHCTRL_CHEN_Msk;
+    /* Selection of the Generator and write Lock for SERCOM4_CORE */
+    GCLK_REGS->GCLK_PCHCTRL[34] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
 
-    while ((GCLK_REGS->GCLK_PCHCTRL[23] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    while ((GCLK_REGS->GCLK_PCHCTRL[34] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
     {
         /* Wait for synchronization */
     }
@@ -164,8 +175,8 @@ void CLOCK_Initialize (void)
     /* Configure the APBA Bridge Clocks */
     MCLK_REGS->MCLK_APBAMASK = 0xc7ffU;
 
-    /* Configure the APBB Bridge Clocks */
-    MCLK_REGS->MCLK_APBBMASK = 0x18256U;
+    /* Configure the APBD Bridge Clocks */
+    MCLK_REGS->MCLK_APBDMASK = 0x1U;
 
 
 }

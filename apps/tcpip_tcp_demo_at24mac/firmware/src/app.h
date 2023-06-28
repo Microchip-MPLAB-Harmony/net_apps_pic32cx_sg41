@@ -177,6 +177,8 @@ typedef enum
 #define AT24MAC_DEVICE_MACADDR  (0x005E)//on SAME54 XPRO
 #elif defined(__SAMV71Q21B__) || defined(__SAME70Q21B__)
 #define AT24MAC_DEVICE_MACADDR  (0x005F)//on SAME70/V71 XULT
+#elif defined(__PIC32CX1025SG41128__)
+#define AT24MAC_DEVICE_MACADDR  (0x005E)//on PIC32CX SG41 CULT
 #endif
 
 

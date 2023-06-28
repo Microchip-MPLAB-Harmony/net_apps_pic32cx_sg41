@@ -60,7 +60,6 @@
 #include "system/reset/sys_reset.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "peripheral/sercom/usart/plib_sercom2_usart.h"
 #include "driver/gmac/drv_gmac.h"
 #include "peripheral/evsys/plib_evsys.h"
 #include "system/command/sys_command.h"
@@ -68,6 +67,7 @@
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
+#include "peripheral/sercom/usart/plib_sercom4_usart.h"
 #include "driver/miim/drv_miim.h"
 #include "wolfssl/wolfcrypt/port/pic32/crypt_wolfcryptcb.h"
 #include "net_pres/pres/net_pres.h"
@@ -87,6 +87,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CX1025SG41128"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "PIC32CX"
+#define DEVICE_SERIES		 "PIC32CXSG41"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000
@@ -206,8 +212,8 @@ typedef struct
 
 
     SYS_MODULE_OBJ  tcpip;
+   SYS_MODULE_OBJ  drvMiim_0;
 
-    SYS_MODULE_OBJ  drvMiim;
     SYS_MODULE_OBJ  sysDebug;
 
     SYS_MODULE_OBJ  netPres;

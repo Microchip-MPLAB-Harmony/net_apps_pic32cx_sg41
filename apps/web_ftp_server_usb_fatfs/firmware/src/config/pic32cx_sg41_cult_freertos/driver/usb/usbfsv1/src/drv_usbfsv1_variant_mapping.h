@@ -57,10 +57,10 @@
  * Macro Mapping
  **********************************************/
 
-/* SAME5x Devices have USB PADCAL values in SW0_ADDR */ 
+/* PIC32CX Devices have USB PADCAL values in SW0_ADDR */ 
 #define DRV_USBFSV1_READ_PADCAL_VALUE (*((uint32_t *) SW0_ADDR + 1))
 
-/* SAME5x Family Devices has Four interrupt vectors for USB module */ 
+/* PIC32CX Family Devices has Four interrupt vectors for USB module */ 
 #define DRV_USBFSV1_MULTIPLE_ISR_AVAILABLE true
   
 #if (DRV_USBFSV1_MULTIPLE_ISR_AVAILABLE == true)

@@ -65,14 +65,41 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*** Macros for SWITCH pin ***/
+#define SWITCH_Set()               (PORT_REGS->GROUP[3].PORT_OUTSET = ((uint32_t)1U << 1U))
+#define SWITCH_Clear()             (PORT_REGS->GROUP[3].PORT_OUTCLR = ((uint32_t)1U << 1U))
+#define SWITCH_Toggle()            (PORT_REGS->GROUP[3].PORT_OUTTGL = ((uint32_t)1U << 1U))
+#define SWITCH_OutputEnable()      (PORT_REGS->GROUP[3].PORT_DIRSET = ((uint32_t)1U << 1U))
+#define SWITCH_InputEnable()       (PORT_REGS->GROUP[3].PORT_DIRCLR = ((uint32_t)1U << 1U))
+#define SWITCH_Get()               (((PORT_REGS->GROUP[3].PORT_IN >> 1U)) & 0x01U)
+#define SWITCH_PIN                  PORT_PIN_PD01
+
+/*** Macros for LED2 pin ***/
+#define LED2_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 16U))
+#define LED2_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 16U))
+#define LED2_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 16U))
+#define LED2_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 16U))
+#define LED2_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 16U))
+#define LED2_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 16U)) & 0x01U)
+#define LED2_PIN                  PORT_PIN_PA16
+
+/*** Macros for VBUS_AH pin ***/
+#define VBUS_AH_Set()               (PORT_REGS->GROUP[2].PORT_OUTSET = ((uint32_t)1U << 19U))
+#define VBUS_AH_Clear()             (PORT_REGS->GROUP[2].PORT_OUTCLR = ((uint32_t)1U << 19U))
+#define VBUS_AH_Toggle()            (PORT_REGS->GROUP[2].PORT_OUTTGL = ((uint32_t)1U << 19U))
+#define VBUS_AH_OutputEnable()      (PORT_REGS->GROUP[2].PORT_DIRSET = ((uint32_t)1U << 19U))
+#define VBUS_AH_InputEnable()       (PORT_REGS->GROUP[2].PORT_DIRCLR = ((uint32_t)1U << 19U))
+#define VBUS_AH_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 19U)) & 0x01U)
+#define VBUS_AH_PIN                  PORT_PIN_PC19
+
 /*** Macros for LED1 pin ***/
-#define LED1_Set()               (PORT_REGS->GROUP[2].PORT_OUTSET = ((uint32_t)1U << 18U))
-#define LED1_Clear()             (PORT_REGS->GROUP[2].PORT_OUTCLR = ((uint32_t)1U << 18U))
-#define LED1_Toggle()            (PORT_REGS->GROUP[2].PORT_OUTTGL = ((uint32_t)1U << 18U))
-#define LED1_OutputEnable()      (PORT_REGS->GROUP[2].PORT_DIRSET = ((uint32_t)1U << 18U))
-#define LED1_InputEnable()       (PORT_REGS->GROUP[2].PORT_DIRCLR = ((uint32_t)1U << 18U))
-#define LED1_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 18U)) & 0x01U)
-#define LED1_PIN                  PORT_PIN_PC18
+#define LED1_Set()               (PORT_REGS->GROUP[2].PORT_OUTSET = ((uint32_t)1U << 21U))
+#define LED1_Clear()             (PORT_REGS->GROUP[2].PORT_OUTCLR = ((uint32_t)1U << 21U))
+#define LED1_Toggle()            (PORT_REGS->GROUP[2].PORT_OUTTGL = ((uint32_t)1U << 21U))
+#define LED1_OutputEnable()      (PORT_REGS->GROUP[2].PORT_DIRSET = ((uint32_t)1U << 21U))
+#define LED1_InputEnable()       (PORT_REGS->GROUP[2].PORT_DIRCLR = ((uint32_t)1U << 21U))
+#define LED1_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 21U)) & 0x01U)
+#define LED1_PIN                  PORT_PIN_PC21
 
 // *****************************************************************************
 /* PORT Group
@@ -111,7 +138,7 @@
 #define GET_PORT_GROUP(pin)  ((PORT_GROUP)(PORT_BASE_ADDRESS + (0x80U * (((uint32_t)pin) >> 5U))))
 #define GET_PIN_MASK(pin)   (((uint32_t)(0x1U)) << (((uint32_t)pin) & 0x1FU))
 
-/* Named type for port group */ 
+/* Named type for port group */
 typedef uint32_t PORT_GROUP;
 
 
@@ -464,7 +491,6 @@ typedef enum
 // Section: Generated API based on pin configurations done in Pin Manager
 // *****************************************************************************
 // *****************************************************************************
-
 // *****************************************************************************
 /* Function:
     void PORT_Initialize(void)

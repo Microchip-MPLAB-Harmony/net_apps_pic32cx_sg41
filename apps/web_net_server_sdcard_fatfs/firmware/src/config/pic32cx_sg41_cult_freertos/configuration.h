@@ -220,6 +220,12 @@ extern "C" {
 
 
 
+/*** NBNS Configuration ***/
+#define TCPIP_STACK_USE_NBNS
+#define TCPIP_NBNS_TASK_TICK_RATE   110
+
+
+
 /*** HTTP NET Configuration ***/
 #define TCPIP_STACK_USE_HTTP_NET_SERVER
 #define TCPIP_HTTP_NET_MAX_HEADER_LEN		    		15
@@ -235,7 +241,7 @@ extern "C" {
 #define TCPIP_HTTP_NET_MAX_DATA_LEN		        		100
 #define TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE		    		1024
 #define TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE		    		1024
-#define TCPIP_HTTP_NET_LISTEN_PORT		    		    80
+#define TCPIP_HTTP_NET_LISTEN_PORT		    		    443
 #define TCPIP_HTTP_NET_CONFIG_FLAGS                       \
                                                         TCPIP_HTTP_NET_MODULE_FLAG_SECURE_DEFAULT |\
                                                         TCPIP_HTTP_NET_MODULE_FLAG_DEFAULT
@@ -266,12 +272,6 @@ extern "C" {
 #define TCPIP_HTTP_NET_MALLOC_FUNC                  pvPortMalloc
 #define TCPIP_HTTP_NET_FREE_FUNC                    vPortFree
 #define TCPIP_HTTP_NET_CONSOLE_CMD           		false
-
-
-
-/*** NBNS Configuration ***/
-#define TCPIP_STACK_USE_NBNS
-#define TCPIP_NBNS_TASK_TICK_RATE   110
 
 
 /******************************************************************************/
@@ -461,7 +461,7 @@ extern "C" {
 
 /*** TCPIP Heap Configuration ***/
 #define TCPIP_STACK_USE_INTERNAL_HEAP
-#define TCPIP_STACK_DRAM_SIZE                       65536
+#define TCPIP_STACK_DRAM_SIZE                       70536
 #define TCPIP_STACK_DRAM_RUN_LIMIT                  2048
 
 #define TCPIP_STACK_MALLOC_FUNC                     malloc
@@ -639,10 +639,6 @@ extern "C" {
 #define WOLFSSL_AES_SMALL_TABLES
 #define NO_MD4
 #define WOLFSSL_SHA224
-#define WOLFSSL_SHA384
-#define WOLFSSL_SHA512
-#define HAVE_SHA512
-#define HAVE_HKDF
 #define WOLFSSL_AES_128
 #define WOLFSSL_AES_192
 #define WOLFSSL_AES_256
@@ -677,7 +673,7 @@ extern "C" {
 #define NET_PRES_NUM_SOCKETS 10
 
 /* Net Pres RTOS Configurations*/
-#define NET_PRES_RTOS_STACK_SIZE                10240
+#define NET_PRES_RTOS_STACK_SIZE                4096
 #define NET_PRES_RTOS_TASK_PRIORITY             1
 	
 #define FREERTOS

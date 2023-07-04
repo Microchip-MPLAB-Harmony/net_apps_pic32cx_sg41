@@ -273,6 +273,10 @@
               <itemPath>../src/config/pic32cx_sg41_cult_freertos/system/int/sys_int.h</itemPath>
               <itemPath>../src/config/pic32cx_sg41_cult_freertos/system/int/sys_int_mapping.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="ports" displayName="ports" projectFiles="true">
+              <itemPath>../src/config/pic32cx_sg41_cult_freertos/system/ports/sys_ports.h</itemPath>
+              <itemPath>../src/config/pic32cx_sg41_cult_freertos/system/ports/sys_ports_mapping.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="reset" displayName="reset" projectFiles="true">
               <itemPath>../src/config/pic32cx_sg41_cult_freertos/system/reset/sys_reset.h</itemPath>
             </logicalFolder>
@@ -322,6 +326,22 @@
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/task.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/mpu_prototypes.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/timers.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/stack_macros.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/croutine.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/message_buffer.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/semphr.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/task.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/stream_buffer.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/mpu_wrappers.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/event_groups.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/portable.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/deprecated_definitions.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/list.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/projdefs.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/queue.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/Include/FreeRTOS.h</itemPath>
           </logicalFolder>
           <logicalFolder name="portable" displayName="portable" projectFiles="true">
             <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
@@ -1015,7 +1035,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1151,7 +1171,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="175000"/>
+        <property key="heap-size" value="185960"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>

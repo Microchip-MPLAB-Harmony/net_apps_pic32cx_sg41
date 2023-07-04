@@ -333,7 +333,7 @@ extern "C" {
 
 /*** GMAC Configuration ***/
 #define DRV_GMAC
-#define DRV_PIC32CX
+#define DRV_PIC32CXSG41
 #define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY    1
 #define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_DUMMY    1
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY            64

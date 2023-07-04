@@ -1596,6 +1596,8 @@
         <property key="memories.programmemory.ranges" value="0-47001fff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/harmony/h3/net_apps_pic32cx_sg41/apps/tcpip_tcp_server/firmware/pic32cx_sg41_cult_freertos.X/debug/pic32cx_sg41_cult_freertos/pic32cx_sg41_cult_freertos_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

@@ -10806,7 +10806,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipHttpNet" name="TCPIP_HTTP_NET_LISTEN_PORT"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipHttpNet&gt;
   &lt;tcpipHttpNet dnOrder=&quot;0&quot; id=&quot;TCPIP_HTTP_NET_LISTEN_PORT&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;443&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipHttpNet&gt;
 &lt;/tcpipHttpNet&gt;
 </value>
@@ -12308,7 +12310,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\configuration.h</file>
-         <hash>2d6036613b3ee0e984597ab4717b46bd658a46972973ea949759b4fa9f9b3793</hash>
+         <hash>8c9d3aa678948270fae78b68f8654a5986b82a4a86992eef7c8d69717fd94423</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\ndp.h</file>

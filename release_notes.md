@@ -18,7 +18,7 @@ The applications demonstrate the typical usage of Harmony 3 TCP/IP Stack on a ha
 ### Development Tools
 
 - [MPLAB® X IDE v6.10](https://www.microchip.com/mplab/mplab-x-ide) or later
-- [MPLAB® XC32 C/C++ Compiler v4.20](https://www.microchip.com/mplab/compilers) or later
+- [MPLAB® XC32 C/C++ Compiler v4.30](https://www.microchip.com/mplab/compilers) or later
 - [MPLAB® Code Configurator (MCC)](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator), 5.3.7 or later
 - [Harmony net repository, 3.10.0](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.10.0)
 - [Harmony net\_apps\_pic32cx\_sg41 demo apps repositories, 3.0.0](https://github.com/Microchip-MPLAB-Harmony/net_apps_pic32cx_sg41/tree/v3.0.0)

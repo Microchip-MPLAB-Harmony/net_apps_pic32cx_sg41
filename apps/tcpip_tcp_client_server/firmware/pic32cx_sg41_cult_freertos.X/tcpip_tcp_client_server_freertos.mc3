@@ -147,7 +147,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.2"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -7321,7 +7321,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\configuration.h</file>
-         <hash>839100ee3034a1b810c0c499c90553cf935f26082f782685be7187f1127d1b6f</hash>
+         <hash>12faac186dfe3df07ab66691afe10e5bfc5858fd5135d3911cc94d9fe8824767</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_GF2NEccMul_pb.h</file>
@@ -7369,7 +7369,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcpip_commands.c</file>
-         <hash>214c5382fbcbb0c41aaa46ddc99761b9ac8551631a75379e983e84031f68c73a</hash>
+         <hash>abd88ff00bef9def69c70f5f59cbd0b1146c1a6bdc22300b1edec8fc8b2e9db9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_Rng_pb.h</file>
@@ -7421,7 +7421,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\ipv6.h</file>
-         <hash>f2163505c21f43198980d29f3a7f4431ce329b5abf3e072de3d587b9e5a28df5</hash>
+         <hash>bc062954ef5f10b03c93605cbaf852d42afed2b38f09244e6b9358d812a8eee6</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\instance\hmatrix.h</file>
@@ -7433,7 +7433,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\dns.c</file>
-         <hash>1e463c42912100661a819c29004c2a858289db264d01a0e57188a70ce3dd23cf</hash>
+         <hash>d210270bbfe63415ef2138313ac2a0917c60e27552f73336597588b96e3be8d8</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
@@ -7445,7 +7445,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\ndp_manager.h</file>
-         <hash>0994d9c5e8e0fa5e633a55f22bcbcf2b4a3570013800c0b8597d8ff2691c16cb</hash>
+         <hash>b659af82e14f5642d2d92d8895ebd11a8323803ab2d1c0570398424ff72d28d3</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\sp_arm64.c</file>
@@ -7625,7 +7625,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\initialization.c</file>
-         <hash>d35c4d9a872bcd981617b001b249b292b59edbee2f60ae539a6ba4077f32f8f5</hash>
+         <hash>ae64626c3c373cfb6d495733fb4ca2f4ad3f5ba8d67b8c2be26387bf7b76dd44</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\types.h</file>
@@ -7993,7 +7993,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\tasks.c</file>
-         <hash>24887622ae2e86755025713612b03893c6adc7786fda355ca620785519944c7b</hash>
+         <hash>572ea6ffe58d6de1ad318b36c782ab32321f583b79e4c795fc6e85219a001f35</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\wolfmath.c</file>
@@ -8017,7 +8017,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\tcpip_mac_object.h</file>
-         <hash>99996439fe8e9af844811082f9f09df2dcee0e543feb9351cf0854e0112f4c6c</hash>
+         <hash>dee2642162c4597aafa0f6dd130a72ad65057a7b891914917a19bebacfebafd3</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\component\ac.h</file>
@@ -8069,7 +8069,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\icmpv6_manager.h</file>
-         <hash>c28e6fb0c4a31c61f2921dab7a8945e3b5cf63c8224cc9304801c93214a0a8c6</hash>
+         <hash>338a01145ab84161193edad653158a8df061f48e4b4c3b3dcb31f00de8581af0</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\component\sercom.h</file>
@@ -8184,6 +8184,10 @@
          <hash>beb0162c9a5367e69de633d3738cade3709e18e47c8647aaee43c97b2c075a5d</hash>
       </entry>
       <entry>
+         <file>..\src\config\pic32cx_sg41_cult_freertos\driver\gmac\src\dynamic\drv_gmac_lib_pic32cxsg41.c</file>
+         <hash>5280602ab96f992100654d41eef8480b0560a9b640adbb14d5c55620c565ef57</hash>
+      </entry>
+      <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\camellia.c</file>
          <hash>3f9cad78a5206374bcdb341a83057cbadbb5a12691ccdb0c97cfadd0fd2b5480</hash>
       </entry>
@@ -8209,7 +8213,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\arp.c</file>
-         <hash>ba6077160a6868043a97a113a7b1a043bbbac13656fa8419c0683b92fdac0046</hash>
+         <hash>8ac795ad2f05f5a3547b187ac3054d71196b9d6c5b5c27c1a97502e94c25c59a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\cpuid.h</file>
@@ -8565,7 +8569,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\ipv6_manager.h</file>
-         <hash>a3e551007357534d010763cbbe45eca53a032aa71ab6742f68c5683e3b993bb7</hash>
+         <hash>f452c104d1f0c9f2184b05e27daf96b52d2f93732c69b9a2f972ff4d86108c38</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\ecc.h</file>
@@ -8613,7 +8617,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\ndp_private.h</file>
-         <hash>cfe66a495e4aa929d17720d2a9025b65080e072a5aace7f1681b8ef0fc01fe4a</hash>
+         <hash>b329e4d0b584e60c3b8546d3a4d6d98246d8dc08f383a065a829e56d80911b19</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcpip_announce_manager.h</file>
@@ -8717,7 +8721,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\ipv4.c</file>
-         <hash>13bead141a999d3f79de16487bf6d99b21fb15bdab999ed9ddb43dd336342343</hash>
+         <hash>c6545dd0c007f399ff69fa92322ebda559ffb95aa7dd78eb1874673ee55fd1e9</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\instance\tc1.h</file>
@@ -8725,7 +8729,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\gmac\src\dynamic\drv_gmac.c</file>
-         <hash>6d85928d884fed7b101d04316cc752e5b08db2372f318b27d7c2801f7abdf1ed</hash>
+         <hash>3a340ebe2fae466a9890d59250ad143691de5a63b3c94cee26c987ce3dab6349</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\sakke.c</file>
@@ -8753,7 +8757,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\dhcp.c</file>
-         <hash>dd97b5bb94fc745507a3036d17ecefabcec97215ca73578da1af3077b5de0914</hash>
+         <hash>b38b2eccbfb16ee07f6d30f13390282ec84ba9e06cebb63ed58e9d0c9b9e5b1a</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\component\cmcc.h</file>
@@ -8797,7 +8801,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\http_net_manager.h</file>
-         <hash>f05933f7a9331b2263c6d9d743dded59c7620addfd89263aaac23a1ed510fc09</hash>
+         <hash>c3c80b63abb3890947cc6ce34f899574ab30776a95fefd35a5f889d3e7a042b7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\memory.h</file>
@@ -8853,7 +8857,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\common\sys_fs_shell.h</file>
-         <hash>f7a74e6dd9bd24b6eb45adf2000e7d7c04f6595c638759b6a810d90fba9e82a5</hash>
+         <hash>bacdc9c802c7ec4f22b52367f13c3f7b7209078df3de74a24f428b6018eb3c27</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_Rc_pb.h</file>
@@ -8925,7 +8929,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcpip_helpers.c</file>
-         <hash>f24e8d265235c5a083a07891e39b4b3a85d027d16722d4aba2caef596ec2e18f</hash>
+         <hash>cc95f974a50273c43a0d473274e9261f3f7c13cf71c41421d46ced9f8e36e8c3</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
@@ -9069,7 +9073,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\tcpip.h</file>
-         <hash>834472c19a5a6651ac066c6e26ad61b3842d16fab0dfd197a46d640bff540408</hash>
+         <hash>134fd10d82e68fa6b034803f7156252113cee824ccd39e5e395a71db78048dec</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\device_vectors.h</file>
@@ -9109,7 +9113,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\dhcpv6_private.h</file>
-         <hash>fbdb94fb86e748d7f88240208e1859a2567fe28869055a34e11304b7cf103a0e</hash>
+         <hash>9460946a8cb9d6595977edff25fe84c62eedaa46e80a35a751ce508715d5da1c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\falcon.c</file>
@@ -9137,7 +9141,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\ethphy\src\dynamic\drv_ethphy.c</file>
-         <hash>0ae158ba73d890192ad451649cd0a9dab055c0ed011421c23af1232f4a65fc5c</hash>
+         <hash>764c148fc56812c73483fa81b040e0ee2b725d58e8634d7ad15410c6454a2f2a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\chacha20_poly1305.c</file>
@@ -9217,7 +9221,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcpip_manager_control.h</file>
-         <hash>ade75a605ec2c98822d127ea7ab3d46e7079bcf4e7cf35d5b5ca2ea181920774</hash>
+         <hash>4125d5e6cd06325c04a237c238a0685048a4521724371cee2f9fe9e8c5c079c5</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\instance\can1.h</file>
@@ -9258,10 +9262,6 @@
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_Headers_pb.h</file>
          <hash>a3b34dc99bbd80aeed655963809d481eab2c5a990945a853f29ecfa14c099a86</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32cx_sg41_cult_freertos\driver\gmac\src\dynamic\drv_gmac_lib_pic32cx.c</file>
-         <hash>902acedf37e867a50ba3b0710bab14d754742951c676538629302d66568b5e2b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\crypt_sha224_hw.h</file>
@@ -9345,7 +9345,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcp.c</file>
-         <hash>4ea9d1a520098b4587f6e311047e47ccf07dc7d20a4c56e41e57e76394ed4716</hash>
+         <hash>48855b7620341ae109452b57948c587e8926367e462d2f9c018cf36e1ee50c7d</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\curve448.h</file>
@@ -9425,7 +9425,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\tcpip_mac.h</file>
-         <hash>e1aff9f8ae28234685db6d7c792f6888cfeacbbeb92991bc054c65b7aee2df19</hash>
+         <hash>7ff6cbab1b346ad5cc517a1af02d1c7453ae4c372d015e118e6aa0cda7078012</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CX1025SG41128_DFP\instance\dsu.h</file>
@@ -9541,7 +9541,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcpip_manager.c</file>
-         <hash>b6ef0a822d371d4c3e8250abfed78a8d2949b17d17eac341127a442a1adc50c2</hash>
+         <hash>94421c93862b2d3a9144c8f7197a74978121e53bc0382d70e65029794306baf9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ripemd.c</file>
@@ -9577,7 +9577,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\udp.c</file>
-         <hash>d26990a2d9142bbae1fdb0b3d4981720054441e262bcf85cdae87bdd32a2dac6</hash>
+         <hash>64b5b4fcf0d373fbdb00a769d80ffdad8db2e3f68932b7be6eab7e50cc7f0f47</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\peripheral\sercom\usart\plib_sercom4_usart.h</file>

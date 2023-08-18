@@ -483,14 +483,6 @@ extern "C" {
 
 
 
-/* Number of MSD Function driver instances in the application */
-#define USB_HOST_MSD_INSTANCES_NUMBER         1
-
-/* Number of Logical Units */
-#define USB_HOST_SCSI_INSTANCES_NUMBER        1
-#define USB_HOST_MSD_LUN_NUMBERS              1
-
-
 /*** GMAC Configuration ***/
 #define DRV_GMAC
 #define DRV_PIC32CXSG41
@@ -539,6 +531,14 @@ extern "C" {
 #define DRV_GMAC_NUMBER_OF_QUEUES               1
 #define DRV_GMAC_RMII_MODE                      0
 
+
+
+/* Number of MSD Function driver instances in the application */
+#define USB_HOST_MSD_INSTANCES_NUMBER         1
+
+/* Number of Logical Units */
+#define USB_HOST_SCSI_INSTANCES_NUMBER        1
+#define USB_HOST_MSD_LUN_NUMBERS              1
 
 
 

@@ -635,7 +635,7 @@
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
                   <itemPath>../src/config/pic32cx_sg41_cult_freertos/driver/gmac/src/dynamic/drv_gmac.c</itemPath>
-                  <itemPath>../src/config/pic32cx_sg41_cult_freertos/driver/gmac/src/dynamic/drv_gmac_lib_pic32cx.c</itemPath>
+                  <itemPath>../src/config/pic32cx_sg41_cult_freertos/driver/gmac/src/dynamic/drv_gmac_lib_pic32cxsg41.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -886,8 +886,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
         <pack name="PIC32CX-SG41_DFP" vendor="Microchip" version="1.1.122"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1071,9 +1071,17 @@
       </C32CPP>
       <C32Global>
         <property key="appendMe" value=""/>
+        <property key="common-include-directories" value=""/>
+        <property key="gp-relative-option" value=""/>
+        <property key="legacy-libc" value="false"/>
         <property key="mdtcm" value=""/>
         <property key="mitcm" value=""/>
         <property key="mstacktcm" value="false"/>
+        <property key="omit-pack-options" value="1"/>
+        <property key="relaxed-math" value="false"/>
+        <property key="save-temps" value="false"/>
+        <property key="stack-smashing" value=""/>
+        <property key="wpo-lto" value="false"/>
       </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -1657,8 +1665,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-47001fff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/harmony/h3/net_apps_pic32cx_sg41/apps/tcpip_tcp_server/firmware/pic32cx_sg41_cult_freertos.X/debug/pic32cx_sg41_cult_freertos/pic32cx_sg41_cult_freertos_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

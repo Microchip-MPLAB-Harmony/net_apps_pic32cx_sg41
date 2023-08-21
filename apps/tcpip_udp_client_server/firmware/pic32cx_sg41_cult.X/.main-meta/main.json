@@ -3,28 +3,28 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.net_apps_sam_e5x_tcpip_udp_client_server_pic32cx_sg41_cult",
-		"version": "3.7.0",
-		"displayName": "TCP/IP UDP Client Server Example for SAM D5x/E5x Family",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32cx_sg41_tcpip_udp_client_server_pic32cx_sg41_cult",
+		"version": "3.0.0",
+		"displayName": "TCP/IP UDP Client Server Example for PIC32CX SG41 Family",
 		"projectName": "tcpip_udp_client_server",
-		"shortDescription": "The UDP Client Server configuration demonstrates creating a network client and a network server that uses the MPLAB Harmony UDP API. This demonstration shows how the UDP/IP loopback works and it is a combination of the TCP/IP UDP Client and TCP/IP UDP Server application.",
+		"shortDescription": "This demonstration is a combination of the UDP Client and UDP Server application. It shows the usage of MPLAB Harmony UDP API to implement, (a) a UDP echo server on port 9760. (b) a UDP client that establishes TCP/IP connection to a UDP server, on port 9760.",
 		"ide": {
 			"name": "MPLABX",
-			"semverRange": ">=5.45.0"
+			"semverRange": ">=6.10.0"
 		},
 		"compiler": [
 			{
 				"name": "XC32",
-				"semverRange": ">=2.50.0"
+				"semverRange": ">=4.21.0"
 			}
 		],
 		"dfp": {
 			"name": "PIC32CX-SG41_DFP",
-			"semverRange": "^3.3.64"
+			"semverRange": "1.1.122"
 		},
 		"configurator": {
-			"name": "MHC",
-			"semverRange": ">=3.6.2"
+			"name": "MCC",
+			"semverRange": ">=5.5.7"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",
@@ -39,7 +39,7 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+				"Development Kit", "PIC32CX SG41 Curiosity Ultra"
 			],
 			[
 				"Harmony", "Middleware", "TCP/IP", "TCPIP_UDP_CLIENT_SERVER"
@@ -52,13 +52,12 @@
 			"MAC"
 		],
 		"keywords": [
-			"MHC",
+			"MCC",
 			"Harmony",
 			"Middleware",
 			"TCP/IP",
 			"PIC32CX1025SG41128",
-			"SAM D5x/E5x Family",
-			"Ethernet MAC",
+			"PIC32CX SG41 Family",
 			"GMAC"
 		],
 		"additionalData": {

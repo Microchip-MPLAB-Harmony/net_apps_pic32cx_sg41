@@ -3,28 +3,28 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.net_apps_sam_e5x_web_net_server_sdcard_fatfs_pic32cx_sg41_cult_freertos",
-		"version": "3.7.0",
-		"displayName": "TCP/IP WEB-NET Server SDMMC Application Example for SAM D5x/E5x Family",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32cx_sg41_web_net_server_sdcard_fatfs_pic32cx_sg41_cult_freertos",
+		"version": "3.0.0",
+		"displayName": "TCP/IP WEB NET Server SD Card Example for PIC32CX SG41 Family",
 		"projectName": "web_net_server_sdcard_fatfs_freertos",
-		"shortDescription": "The Web Net Server SDCard configuration demonstrates creating an HTTP web server on a Microchip evaluation board. The FAT FS File System is used for storing the web pages on an external SD Card.",
+		"shortDescription": "The Web Net Server SD Card application creates a HTTP web server on Microchip evaluation board. The FAT FS File System is used for storing the web pages on an external SD Card.",
 		"ide": {
 			"name": "MPLABX",
-			"semverRange": ">=5.45.0"
+			"semverRange": ">=6.10.0"
 		},
 		"compiler": [
 			{
 				"name": "XC32",
-				"semverRange": ">=2.50.0"
+				"semverRange": ">=4.21.0"
 			}
 		],
 		"dfp": {
 			"name": "PIC32CX-SG41_DFP",
-			"semverRange": "^3.3.64"
+			"semverRange": "1.1.122"
 		},
 		"configurator": {
-			"name": "MHC",
-			"semverRange": ">=3.6.2"
+			"name": "MCC",
+			"semverRange": ">=5.5.7"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",
@@ -39,7 +39,7 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+				"Development Kit", "PIC32CX SG41 Curiosity Ultra"
 			],
 			[
 				"Harmony", "Middleware", "TCP/IP", "WEB_NET_SERVER_SDCARD_FATFS"
@@ -52,13 +52,12 @@
 			"MAC"
 		],
 		"keywords": [
-			"MHC",
+			"MCC",
 			"Harmony",
 			"Middleware",
 			"TCP/IP",
 			"PIC32CX1025SG41128",
-			"SAM D5x/E5x Family",
-			"Ethernet MAC",
+			"PIC32CX SG41 Family",
 			"GMAC"
 		],
 		"additionalData": {

@@ -3,28 +3,28 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.net_apps_sam_e5x_tcpip_tcp_demo_at24mac_pic32cx_sg41_cult",
-		"version": "3.7.0",
-		"displayName": "TCP/IP TCP Client Example for SAM D5x/E5x Family",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32cx_sg41_tcpip_tcp_demo_at24mac_pic32cx_sg41_cult",
+		"version": "3.0.0",
+		"displayName": "TCP/IP TCP Client Server AT24MAC Example for PIC32CX SG41 Family",
 		"projectName": "tcpip_tcp_demo_at24mac",
-		"shortDescription": "The TCP Client configuration demonstrates creating a network client with the MPLAB Harmony TCP API to make a TCP/IP connection to a web server.",
+		"shortDescription": "This demonstration is a combination of the TCP Client and TCP Server application using AT24MAC402 Serial EEPROM. It shows the usage of MPLAB Harmony TCP API to implement, (a) a TCP echo server on port 9760. (b) a TCP client that establishes TCP/IP connection to a TCP server.",
 		"ide": {
 			"name": "MPLABX",
-			"semverRange": ">=5.45.0"
+			"semverRange": ">=6.10.0"
 		},
 		"compiler": [
 			{
 				"name": "XC32",
-				"semverRange": ">=2.50.0"
+				"semverRange": ">=4.21.0"
 			}
 		],
 		"dfp": {
 			"name": "PIC32CX-SG41_DFP",
-			"semverRange": "^3.3.64"
+			"semverRange": "1.1.122"
 		},
 		"configurator": {
-			"name": "MHC",
-			"semverRange": ">=3.6.2"
+			"name": "MCC",
+			"semverRange": ">=5.5.7"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",
@@ -39,7 +39,7 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+				"Development Kit", "PIC32CX SG41 Curiosity Ultra"
 			],
 			[
 				"Harmony", "Middleware", "TCP/IP", "TCPIP_TCP_DEMO_AT24MAC"
@@ -52,13 +52,12 @@
 			"MAC"
 		],
 		"keywords": [
-			"MHC",
+			"MCC",
 			"Harmony",
 			"Middleware",
 			"TCP/IP",
 			"PIC32CX1025SG41128",
-			"SAM D5x/E5x Family",
-			"Ethernet MAC",
+			"PIC32CX SG41 Family",
 			"GMAC"
 		],
 		"additionalData": {

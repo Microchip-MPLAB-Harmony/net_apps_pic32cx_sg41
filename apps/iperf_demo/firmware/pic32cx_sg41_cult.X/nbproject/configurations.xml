@@ -874,7 +874,6 @@
           <property key="use-indirect-calls" value="false"/>
         </C32>
         <C32-AR>
-          <property key="additional-options-chop-files" value="false"/>
         </C32-AR>
         <C32-AS>
           <property key="assembler-symbols" value=""/>
@@ -1086,7 +1085,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="122960"/>
+        <property key="heap-size" value="143360"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>

@@ -127,12 +127,12 @@ void _DRV_USB_VBUSPowerEnable(uint8_t port, bool enable)
     if (enable == true)
     {
         /* Enable the VBUS */
-        VBUS_AH_PowerEnable();
+        VBUS_AL_PowerEnable();
     }
     else
     {
         /* Disable the VBUS */
-        VBUS_AH_PowerDisable();
+        VBUS_AL_PowerDisable();
     }
 }
 const DRV_USBFSV1_INIT drvUSBInit =
@@ -389,7 +389,8 @@ const TCPIP_STACK_MODULE_CONFIG TCPIP_STACK_MODULE_CONFIG_TBL [] =
 
     {TCPIP_MODULE_FTP_SERVER,       &tcpipFTPInitData},             // TCPIP_MODULE_FTP
     {TCPIP_MODULE_HTTP_NET_SERVER,  &tcpipHTTPNetInitData},         // TCPIP_MODULE_HTTP_NET_SERVER
-    {TCPIP_MODULE_SMTPC, &tcpipSMTPCInitData},                                  // TCPIP_MODULE_SMTPC,
+    {TCPIP_MODULE_SMTPC,            &tcpipSMTPCInitData},           // TCPIP_MODULE_SMTPC,
+    {TCPIP_MODULE_COMMAND,          0},                             // TCPIP_MODULE_COMMAND,
     { TCPIP_MODULE_MANAGER,         &tcpipHeapConfig },             // TCPIP_MODULE_MANAGER
 
 // MAC modules
@@ -804,6 +805,7 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
+	BSP_Initialize();
     SERCOM4_USART_Initialize();
 
 

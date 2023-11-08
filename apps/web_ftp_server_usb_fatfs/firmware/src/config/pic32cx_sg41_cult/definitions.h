@@ -68,6 +68,7 @@
 #include "usb/usb_host_msd.h"
 #include "usb/usb_host_scsi.h"
 #include "peripheral/evsys/plib_evsys.h"
+#include "bsp/bsp.h"
 #include "system/command/sys_command.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"

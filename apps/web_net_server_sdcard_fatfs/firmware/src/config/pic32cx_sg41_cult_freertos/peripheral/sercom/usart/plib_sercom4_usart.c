@@ -69,8 +69,8 @@ volatile static SERCOM_USART_RING_BUFFER_OBJECT sercom4USARTObj;
 // *****************************************************************************
 // *****************************************************************************
 
-#define SERCOM4_USART_READ_BUFFER_SIZE      128U
-#define SERCOM4_USART_READ_BUFFER_9BIT_SIZE     (128U >> 1U)
+#define SERCOM4_USART_READ_BUFFER_SIZE      2056U
+#define SERCOM4_USART_READ_BUFFER_9BIT_SIZE     (2056U >> 1U)
 #define SERCOM4_USART_RX_INT_DISABLE()      SERCOM4_REGS->USART_INT.SERCOM_INTENCLR = SERCOM_USART_INT_INTENCLR_RXC_Msk
 #define SERCOM4_USART_RX_INT_ENABLE()       SERCOM4_REGS->USART_INT.SERCOM_INTENSET = SERCOM_USART_INT_INTENSET_RXC_Msk
 

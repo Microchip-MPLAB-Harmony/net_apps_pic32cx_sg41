@@ -6,6 +6,9 @@
         <logicalFolder name="pic32cx_sg41_cult"
                        displayName="pic32cx_sg41_cult"
                        projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/pic32cx_sg41_cult/bsp/bsp.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/pic32cx_sg41_cult/crypto/crypto.h</itemPath>
           </logicalFolder>
@@ -622,6 +625,9 @@
         <logicalFolder name="pic32cx_sg41_cult"
                        displayName="pic32cx_sg41_cult"
                        projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/pic32cx_sg41_cult/bsp/bsp.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/pic32cx_sg41_cult/crypto/src/crypto.c</itemPath>
           </logicalFolder>
@@ -949,7 +955,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1732,6 +1738,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/harmony/h3/net_apps_pic32cx_sg41/apps/web_ftp_server_usb_fatfs/firmware/pic32cx_sg41_cult.X/debug/pic32cx_sg41_cult/pic32cx_sg41_cult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

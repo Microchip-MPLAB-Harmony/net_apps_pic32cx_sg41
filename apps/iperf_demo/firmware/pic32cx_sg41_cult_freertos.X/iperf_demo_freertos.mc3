@@ -4626,6 +4626,28 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvGmac" name="DRV_GMAC_RX_CHKSM_OFFLOAD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvGmac&gt;
+  &lt;drvGmac dnOrder=&quot;0&quot; id=&quot;DRV_GMAC_RX_CHKSM_OFFLOAD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/drvGmac&gt;
+&lt;/drvGmac&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvGmac" name="DRV_GMAC_TX_CHKSM_OFFLOAD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvGmac&gt;
+  &lt;drvGmac dnOrder=&quot;0&quot; id=&quot;DRV_GMAC_TX_CHKSM_OFFLOAD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/drvGmac&gt;
+&lt;/drvGmac&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvGmac" name="TCPIP_GMAC_ETH_OF_100"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvGmac&gt;
   &lt;drvGmac dnOrder=&quot;0&quot; id=&quot;TCPIP_GMAC_ETH_OF_100&quot;&gt;
@@ -7659,7 +7681,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\configuration.h</file>
-         <hash>a78ce755d7a5773893fa7203a15a07514d369211b5c255d66729cfc50be073d2</hash>
+         <hash>e963c9e64d61e40b403aca57ee1b4100e06ecb2f832fb967fd6f2b3f3c7f5502</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_GF2NEccMul_pb.h</file>
@@ -7967,7 +7989,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\initialization.c</file>
-         <hash>6468b856d7666b9fa2fc2ec158551fdb75fee3b87a8ef71f64c19f3a6cb70400</hash>
+         <hash>6bee6d2d0c07f85dabe81a2d7304986be29ad1abd9b24f45d903b578749c7cd1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\types.h</file>
@@ -8527,7 +8549,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\gmac\src\dynamic\drv_gmac_lib_pic32cxsg41.c</file>
-         <hash>9daf7a107ba4ccc6a7d1df6f9fd8fcd8fdf1044d769a01d90be3d6b91b653202</hash>
+         <hash>dc77a74a8dc979e147fa12bf0ac4b1bb78cc7e40dd4cbffbfd2a02544f39aa4f</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\camellia.c</file>
@@ -9071,7 +9093,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\gmac\src\dynamic\drv_gmac.c</file>
-         <hash>9dbd872b88897925d44d01c6248d3b3d541f11d18dcb36e53c3d6d17d8e27ee7</hash>
+         <hash>ec76666fa8119d45514373a33a553e0fa95e855087bf5e82748b4d7e55a4f58d</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\sakke.c</file>
@@ -9331,7 +9353,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\berkeley_manager.h</file>
-         <hash>19254a00f9a2c37a0f1199ce4053502487426784a97b7902832d734cff7106d8</hash>
+         <hash>523b55a8af2a7783868f95c9529ad55d260daad19a2f59214c63654fa85b0ee5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\hmac.c</file>

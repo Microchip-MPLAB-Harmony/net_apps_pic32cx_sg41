@@ -105,8 +105,6 @@ APP_DATA appData;
 /* TODO:  Add any necessary local functions.
 */
 
-bool gDataReceived=false;
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Initialization and State Machine Functions
@@ -137,6 +135,8 @@ void APP_Initialize ( void )
 }
 void _APP_ClientTasks()
 {
+    static bool dataReceived=false;
+    
     switch(appData.clientState)
     {
         case APP_TCPIP_WAITING_FOR_COMMAND:
@@ -254,12 +254,12 @@ void _APP_ClientTasks()
             {
                 TCPIP_TCP_ArrayGet(appData.clientSocket, (uint8_t*)buffer, sizeof(buffer) - 1);
                 SYS_CONSOLE_PRINT("%s", buffer);
-                gDataReceived = true;
+                dataReceived = true;
             }
-            if(gDataReceived)
+            if(dataReceived)
             {
                 SYS_CONSOLE_PRINT("\r\nConnection established with < %s > \r\n",appData.host);
-                gDataReceived = false;
+                dataReceived = false;
             }
 
             if (!TCPIP_TCP_IsConnected(appData.clientSocket) || TCPIP_TCP_WasDisconnected(appData.clientSocket))

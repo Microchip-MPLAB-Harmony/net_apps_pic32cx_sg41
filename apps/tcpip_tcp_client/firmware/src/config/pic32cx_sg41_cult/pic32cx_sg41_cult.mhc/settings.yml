@@ -1,6 +1,6 @@
-format_version: v1.0
 configName: pic32cx_sg41_cult
 folderName: pic32cx_sg41_cult
+format_version: v1.0
 frameworkPath: C:\harmony\h3
 processor: PIC32CX1025SG41128
 projectName: pic32cx_sg41_cult

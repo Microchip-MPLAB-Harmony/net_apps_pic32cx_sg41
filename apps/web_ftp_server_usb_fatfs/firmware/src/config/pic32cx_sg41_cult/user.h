@@ -33,13 +33,6 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 
-#ifndef VBUS_AH_PowerEnable
-#define VBUS_AH_PowerEnable() VBUS_AH_Clear()
-#endif
-    
-#ifndef VBUS_AH_PowerDisable
-#define VBUS_AH_PowerDisable() VBUS_AH_Set()
-#endif
 
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus

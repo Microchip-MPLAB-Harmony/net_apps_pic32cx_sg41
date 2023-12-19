@@ -3,6 +3,47 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Network Application Examples for PIC32CX SG41 Family, v3.1.0
+
+### New Features
+- Support for MAC RX/TX Checksum offload feature
+
+
+### Improvements and Bug Fixes
+- IPERF throughput improvement.
+- Fix for GMAC driver critical section access issue.
+- ETHPHY driver write function.
+- Fix for bind operation in berkeley module.
+- Fix for 'IntegerSymbol not found' MCC failure.
+- Updated demo documentation.
+
+### Known Issues
+None
+
+
+### Development Tools
+
+- [MPLAB® X IDE, v6.15](https://www.microchip.com/mplab/mplab-x-ide) or later
+- [MPLAB® XC32 C/C++ Compiler, v4.35](https://www.microchip.com/mplab/compilers) or later
+- [MPLAB® Code Configurator(MCC) Plugin, v5.3.7](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator) or later
+- [MPLAB® Harmony v3 net repository, v3.11.0](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.11.0)
+- [MPLAB® Harmony v3 net\_apps\_pic32cx\_sg41 demo apps repository, v3.1.0](https://github.com/Microchip-MPLAB-Harmony/net_apps_pic32cx_sg41/tree/v3.1.0)
+
+### Development Kit Support
+
+This release supports applications for the following development kit.
+
+| Development Kits |
+| --- |
+| [PIC32CX SG41 Curiosity Ultra](https://www.microchip.com/en-us/development-tool/EV06X38A) |
+
+
+## Net Release Notes
+
+- See the [Net 3.11.0 Release Notes](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.11.0)
+
+---
+
 
 ## Harmony 3 Network Application Examples for PIC32CX SG41 Family v3.0.1
 

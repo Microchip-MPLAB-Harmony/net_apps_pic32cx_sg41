@@ -5829,6 +5829,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_SUPPORT_STREAM"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
+  &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_SUPPORT_STREAM&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/net_Pres&gt;
+&lt;/net_Pres&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="net_Pres" name="NET_PRES_USE_WOLF_SSL"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;net_Pres&gt;
   &lt;net_Pres dnOrder=&quot;0&quot; id=&quot;NET_PRES_USE_WOLF_SSL&quot;&gt;
@@ -8146,6 +8157,28 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipStack" name="TCPIP_STACK_HEAP_SIZE_RECOMMEND"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipStack&gt;
+  &lt;tcpipStack dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_HEAP_SIZE_RECOMMEND&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipStack&quot; value=&quot;65&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/tcpipStack&gt;
+&lt;/tcpipStack&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipStack" name="TCPIP_STACK_SYS_RANDOM_H2_ADAPTER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipStack&gt;
+  &lt;tcpipStack dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_SYS_RANDOM_H2_ADAPTER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipStack&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/tcpipStack&gt;
+&lt;/tcpipStack&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="!@#harmonyAttachmentState"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
   &lt;tcpipTcp dnOrder=&quot;0&quot;/&gt;
@@ -8155,6 +8188,213 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>TRANSPORT LAYER</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_AUTO_TRANSMIT_TIMEOUT_VAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_AUTO_TRANSMIT_TIMEOUT_VAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_CLOSE_WAIT_TIMEOUT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_CLOSE_WAIT_TIMEOUT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_COMMANDS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_COMMANDS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_DELAYED_ACK_TIMEOUT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_DELAYED_ACK_TIMEOUT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_DISABLE_CRYPTO_USAGE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_DISABLE_CRYPTO_USAGE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_DYNAMIC_OPTIONS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_DYNAMIC_OPTIONS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_EXTERN_PACKET_PROCESS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_EXTERN_PACKET_PROCESS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_FIN_WAIT_2_TIMEOUT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_FIN_WAIT_2_TIMEOUT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_HEAP_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_HEAP_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_KEEP_ALIVE_TIMEOUT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_KEEP_ALIVE_TIMEOUT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MAX_RETRIES"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MAX_RETRIES&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MAX_SEG_SIZE_TX"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MAX_SEG_SIZE_TX&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MAX_SOCKETS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MAX_SOCKETS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MAX_SYN_RETRIES"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MAX_SYN_RETRIES&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MAX_UNACKED_KEEP_ALIVES"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MAX_UNACKED_KEEP_ALIVES&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_MSL_TIMEOUT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_MSL_TIMEOUT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_QUIET_TIME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_QUIET_TIME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_SOCKET_DEFAULT_RX_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_SOCKET_DEFAULT_RX_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_SOCKET_DEFAULT_TX_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_SOCKET_DEFAULT_TX_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_START_TIMEOUT_VAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_START_TIMEOUT_VAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_TASK_TICK_RATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_TASK_TICK_RATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_WINDOW_UPDATE_TIMEOUT_VAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_WINDOW_UPDATE_TIMEOUT_VAL&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_USE_TCP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
+  &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_USE_TCP&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/tcpipTcp&gt;
+&lt;/tcpipTcp&gt;
+</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipUdp" name="!@#harmonyAttachmentState"/>
@@ -8287,7 +8527,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\configuration.h</file>
-         <hash>dbb836b91d4a4a6623dd2e3b88521f7f5f9184138546501f12a7798268adf9b7</hash>
+         <hash>7ed9e0324f348168161530fdda3ab0310b4a817baf587790daf6bfe230a6046d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\ndp.h</file>
@@ -9239,7 +9479,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\ethphy\src\dynamic\drv_extphy_regs.h</file>
-         <hash>f86abe844bea011040ca6705895d34f1106aa53cf875bde5bc4fb9d608a9bf29</hash>
+         <hash>8b304230ccee2b2aef3b92eef3c004c938e81432844db5fb0db127986a811e9f</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\CryptoLib_Swap_pb.h</file>
@@ -9823,7 +10063,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\src\tcpip_mac_bridge_private.h</file>
-         <hash>4f94e7c23deb567c6717c1e790d8dd779ce85835dfb3b28f104e0460f8b90dcb</hash>
+         <hash>8a616af6e5e81b37d32df4a326d20d6f52e91a2053211a6abf2ec9391ef2b2a3</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\coding.c</file>
@@ -9911,7 +10151,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\gmac\src\dynamic\drv_gmac.c</file>
-         <hash>ec76666fa8119d45514373a33a553e0fa95e855087bf5e82748b4d7e55a4f58d</hash>
+         <hash>0c2916e506804460aa71466c1b1c0995ec316d34375311c7906d1f18e82b7038</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\sakke.c</file>
@@ -10395,7 +10635,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\ethphy\src\dynamic\drv_ethphy.c</file>
-         <hash>c3d2f4da008b8ad990932fc3fd4f5842d1ce6b3ecf6d05a396fbc5f89604febd</hash>
+         <hash>f9b6cd771128c5a2f0568dbac64f8d5429a023e61052d8b587a16059d97c463f</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\chacha20_poly1305.c</file>
@@ -10703,7 +10943,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\library\tcpip\tcpip_mac.h</file>
-         <hash>218593a61106f8271a1f93a33124f01482c46982a7b70fa29a4916045e466599</hash>
+         <hash>7137ed6478803b511ada20f717583d7168e680c784b6d6c42dbaa75e4b928ea1</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\system\fs\src\sys_fs_media_manager.c</file>
@@ -10923,7 +11163,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32cx_sg41_cult_freertos\driver\ethphy\src\drv_ethphy_local.h</file>
-         <hash>d2fca30512453811bb11b4cfff6e0bf937a0fe5afc2698a5ba1440f6346b7620</hash>
+         <hash>3f19a0efd23df04cc9ba8e7359d01372236eed0688979ea00507b429c6c9c698</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\curve25519.c</file>
